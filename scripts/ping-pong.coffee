@@ -57,8 +57,8 @@ module.exports = (robot) ->
     msg.send MatchRecords.last(num)
 
   robot.respond /clear ping pong history/i, (msg) ->
-    robot.brain.data.players = {}
-    robot.brain.data.matches = []
+    robot.brain.data.ping_pong.players = {}
+    robot.brain.data.ping_pong.matches = []
     msg.send "ping pong history has been reset"
 
   ##################################################
